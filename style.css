@@ -35,7 +35,7 @@ li{
 .nav-links a{
     text-decoration: none;
      color: rgb(5, 110, 110); 
-    font-size: 0.6rem;
+    font-size: 0.4rem;
 
 }
 nav > .menu-bar{
@@ -82,7 +82,6 @@ nav >.nav-links  > .cancelIcon{
     display: flex;
     flex-direction: column;
     width: 48%;
-    /* height: 60%; */
     row-gap:4%;
     /* border: 2px solid red; */
     margin: -8% 0 0 0;
@@ -90,6 +89,7 @@ nav >.nav-links  > .cancelIcon{
 }
 .intro-content p{
     font-size: 2vw;
+    color: #0e7600;
 }
 .intro-content :nth-child(1){
     margin-left: 1.7%;
@@ -121,19 +121,22 @@ nav >.nav-links  > .cancelIcon{
 
 .profile-img{
     width: 47%;
-    height: 85%;
+    height: 80vh;
+    /* border: 2px solid black; */
     display: flex;
     align-items: center;
     justify-content: center;
+
+
 
 }
 
 .profile-img > img{
 
-    width: 70%;
-    height: 100%;
+    width: 75%;
+    height: 80%;
     object-fit: cover;
-    border-radius: 25%;
+    border-radius: 30%;
 }
 /* .profile-img > img:hover {
     transform: skew(180deg, 180deg);
@@ -144,7 +147,7 @@ nav >.nav-links  > .cancelIcon{
 
 
 
-@media (max-width:800px) {
+@media (max-width:950px) {
     nav > ul{
         display: none;
     }
@@ -197,20 +200,18 @@ nav >.nav-links  > .cancelIcon{
     .introduction{
         
         /* justify-content:flex-start; */
-        align-items: flex-start;
+        /* align-items: flex-start; */
 
  
     } 
     
     .intro-content{
         width: 45%;
-        height: 50%;
-        row-gap: 5%;
-        margin: 10% 0;
+        margin-top: -20%;
         
     }
     .intro-content p {
-        font-size: 3vw;
+        font-size: 4vw;
     }
     #title{
         font-size: 2vw;
@@ -219,20 +220,19 @@ nav >.nav-links  > .cancelIcon{
     
 
     .profile-img{
-        width: 50%;
-        height: 70%;
-        margin: 10px 0;
+    /* align-items: flex-start; */
 
     }   
     .profile-img > img{
+        margin-top: -20%;
         width: 90%;
-        height: 100%;
+        height: 70%;
     }
                
 }
 
 
-@media (max-width: 680px) {
+@media (max-width: 720px) {
      
     .nav-links.show{
         width: 50%;
@@ -247,33 +247,46 @@ nav >.nav-links  > .cancelIcon{
         width: 100%;
         flex-wrap: wrap; 
         align-items: center;
+        /* border: 2px solid black; */
     }
 
     .intro-content{
-        width: 100%;
-        margin: 3% 3% 0 3%;
+        width: 95%;
+        margin: 7% 3% 0 3%;
         /* border: 2px solid red; */
         overflow: hidden;
         
     }
     #title{
-        font-size: 4vw;
+        font-size: 4.4vw;
         margin-left: 14%;
     }
     #name{
-        font-size: 11vw;
+        font-size: 12vw;
         margin-top: -1%;
     }
     
     
      .profile-img{
         width: 75%; 
-        /* height: 0%;*/
-        margin: 3% 0;
+        height: 60vh;
+        margin: 7% 0;
+        /* border: 2px solid red; */
+        justify-content: center;
+        align-items:center;
 
+        
     } 
+    .profile-img > img{
+        /* width: 75%; */
+        height: 80%;
+
+        
+    }
+
     .intro-content p{
-        font-size: 6vw;
+        font-size: 5vw;
+        
         
     }
    
